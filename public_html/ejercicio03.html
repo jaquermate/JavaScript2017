@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        
+        <script>
+            
+            function sustituye(){
+                
+               var objetoFecha = new Date();
+               var hoy = objetoFecha.getDay();
+            //  var diaDeLaSemana = "Hoy es otro dia";  
+            //   if(hoy === 2){
+            //       diaDeLaSemana = "HOY ES MARTES!!";                 
+            //  }
+           
+             var diaDeLaSemana = (hoy === 2)? "hoy es martes" : "hoy es otro dia";
+              document.getElementById('cabecera').innerHTML = diaDeLaSemana;
+            }
+            </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <input onclick="sustituye();" type="submit" value='ejemplo03'/>
+            <h1 id="cabecera"></h1>
+        </div>
+    </body>
+</html>

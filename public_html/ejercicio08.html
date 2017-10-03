@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <script>
+            function sumaNumeros(){
+                var resultado=0;
+                for(var i in arguments){
+                    resultado= resultado+=arguments[i];
+                }
+                return (resultado);
+            }
+            function ejemploFunciones(){
+                //suma = sumaNumeros(44,56,83,93);
+                document.write(suma(44,56,83,93));
+            }
+            var suma = function (){
+                 var resultado=0;
+                for(var i in arguments){
+                    resultado= resultado+=arguments[i];
+                }
+                return (resultado);
+            }
+            </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <input type="submit" value="Ejemplo7" onclick="ejemploFunciones();"/>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <script>
+            
+        var ejemploObjeto= {
+            propiedad1: "valor",
+            propiedad2: 1500,
+            metodo1: function(){
+                console.log("este es el metodo 1");
+            },
+            metodo2: function(){
+                console.log("este es el metodo 2");
+            }
+        };
+        ejemploObjeto.metodo1();
+        ejemploObjeto.metodo2();
+        
+        var familia={
+            nombre:"Stark",
+            castillo:{
+                nombre:"Invernalia",
+                gobierno:{
+                    Lord:"Ned Stark",
+                    Lady:"Catelyn Stark"
+                },
+                lema: "Winter is Coming"
+            },
+            hijos:[
+                 {edad: 14, nombre: "Robb Stark"},
+                 {edad: 14, nombre: "Jon Snow"},
+                 {edad: 11, nombre: "Sansa Stark"},
+                 {edad: 9, nombre: "Arya Stark"},
+                 {edad: 7, nombre: "Bran Stark"},
+                 {edad: 3, nombre: "Rickon Stark"}
+            ],
+            fundador: function(){
+                document.write("Brandon el constructor")
+            },
+            listado: function(){
+                for(var i in this.hijos){
+                    
+                }
+            }
+        };
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         
+    </body>
+</html>
